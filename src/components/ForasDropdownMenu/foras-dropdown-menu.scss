@@ -1,0 +1,52 @@
+@import '../../sass/variables.scss';
+
+.btn-foras-dropdown {
+    border: none;
+    background-color: transparent;
+    color: $white !important;
+    padding: 0.3rem 2rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    &:hover, &:active, &:focus {
+        background-color: transparent !important;
+        border-color: $white !important;
+        box-shadow: none !important;
+    }
+}
+
+.foras-backdrop {
+    background-color: transparent;
+}
+
+.dropdown-modal {
+    .dropdown-triangle-img {
+        position: absolute;
+        width: 30px;
+        top: -30px;
+        right: 30rem;
+    }
+    .modal-dialog {
+        margin-top: 115px;
+        max-width: 100% !important;
+        .modal-content {
+            .modal-body {
+                height: 100px;
+                background-color: $bg-color;
+                .navbar-nav {
+                    display: inline;
+                    .nav-link {
+                        display: inline-block;
+                    }
+                    &.individual-nav {
+                        margin-right: 17.5rem;
+                    }
+                    &.corporate-nav {
+                        margin-right: 23rem;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

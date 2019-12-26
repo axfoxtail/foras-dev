@@ -1,0 +1,60 @@
+@import '../../../sass/variables.scss';
+
+.header {
+    background-color: $orange;
+    color: $white;
+    nav {
+        height: 120px;
+        .nav-link, .btn-link {
+            color: $white !important;
+            padding: 0.3rem 2rem !important;
+            margin-left: 1rem !important;
+            margin-right: 1rem !important;
+            text-decoration: none;
+            &.btn-login {
+                border: solid 1px $white;
+                border-radius: 20px;
+            }
+            &.btn-register-individual {
+                background-color: $accent-orange;
+                border-radius: 20px;
+            }
+            &.btn-register-corporate {
+                background-color: $black;
+                border-radius: 20px;
+            }
+        }
+        .dropdown-menu {
+            top: 70px;
+        }
+    }
+    .foras-dropdown {
+        position: absolute;
+        top: 120px;
+        height: 100px;
+        width: 100%;
+        z-index: 1;
+        background-color: $bg-color;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        display: none;
+        &.show {
+            display: block;
+        }
+        .sub-nav {
+            position: relative;
+            height: 100%;
+            .nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20rem;
+                .nav-link {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+    }
+}

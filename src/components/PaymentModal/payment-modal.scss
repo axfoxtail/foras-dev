@@ -1,0 +1,91 @@
+@import '../../sass/variables.scss';
+
+.btn-login {
+    border: solid 1px $white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: $white !important;
+    padding: 0.3rem 2rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    &:hover, &:active, &:focus {
+        background-color: transparent !important;
+        border-color: $white !important;
+        box-shadow: none !important;
+    }
+}
+
+.payment-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        max-width: 450px !important;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                .payment-form {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .img_visa {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        height: 45px;
+                        left: 0;
+                    }
+                    input.form-control {
+                        min-height: 45px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border-radius: 30px;
+                    }
+                    .btn-toggle-show {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        left: 15px;
+                        color: $gray;
+                    }
+                    .err-msg {
+                        color: $gray;
+                    }
+                }
+                .social-icon-group {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-go {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 25px;
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

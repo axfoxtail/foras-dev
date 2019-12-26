@@ -1,0 +1,57 @@
+@import '../../sass/variables.scss';
+
+.job-post-form {
+    margin-left: auto;
+    margin-right: auto;
+    .right-border-indicator {
+        border-right: solid 1px transparent;
+        -webkit-border-image: url("../../assets/images/Line-V.png") 2 round; /* Safari 3.1-5 */
+        -o-border-image: url("../../assets/images/Line-V.png") 2 round; /* Opera 11-12.1 */
+        border-image: url("../../assets/images/Line-V.png") 2 round;
+    }
+    .form-control {
+        min-height: 50px;
+        border-radius: 30px;
+        &.select, &.none-icon {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    .btn-toggle-workdays {
+        background-color: $white;
+        border: solid 1px $input-border;
+        border-radius: 20px;
+        color: $input-color;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        &.active {
+            background-color: $orange !important;
+            color: $white !important;
+        }
+    }
+    .react-datepicker-wrapper {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .datepicker-icon {
+        position: absolute;
+        width: 25px;
+        left: 20px;
+        margin-top: 15px;
+        z-index: 1;
+    }
+    .react-datepicker-popper {
+        z-index: 2;
+    }
+    .btn-add-job {
+        background-color: $accent-orange;
+        color: $white;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}

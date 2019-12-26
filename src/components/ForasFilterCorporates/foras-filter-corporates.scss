@@ -1,0 +1,22 @@
+@import '../../sass/variables.scss';
+
+.btn-filter-toggle {
+    border-radius: 30px;
+    background-color: $bg-color;
+    border: solid 1px $gray;
+    color: $gray;
+    &:hover, &:active, &:focus {
+        background-color: $bg-color !important;
+        border: solid 1px $gray !important;
+        box-shadow: none !important;
+        color: $gray !important;
+    }
+    &.active {
+        background-color: $orange !important;
+        color: $white !important;
+    }
+    .filter-bnt-icon {
+        height: 25px;
+        float: right;
+    }
+}

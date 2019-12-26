@@ -1,0 +1,136 @@
+body {
+    direction: rtl;
+    font-family: 'AlinmaTheSans-Plain';
+    background-color: $bg-color;
+}
+
+.icon-button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    &:active, &:focus, &:hover {
+        background-color: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.border-black {
+    border: solid 1px $black;
+}
+
+.logo-circle-container {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    border-radius: 50%;
+    border: dotted 2px $gray;
+    overflow: hidden;
+    &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    .logo-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        .logo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.logo-container {
+    position: relative;
+    width: 100%;
+    background-color: $bg-color;
+    border-radius: 8px;
+    overflow: hidden;
+    &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    .logo-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        .logo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}
+
+.border-none {
+    border: none;
+}
+
+.bg-foras {
+    background-color: $bg-color;
+}
+
+.react-rater {
+    .react-rater-star {
+        font-size: 1.5vw;
+        &.is-active {
+            color: $orange;
+        }
+        &.is-active-half {
+            &::before {
+                color: $orange !important;
+                right:0 !important;
+            }
+        }
+        &.will-be-active {
+            color: $orange;
+        }
+    }
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 5px 30px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 30px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 30px -9px rgba(0,0,0,0.75);
+}
+
+.notification-container-bottom-left {
+    width: 260px;
+}
+
+.bg-detail-header {
+    background: url("../assets/images/detail-header.png") no-repeat;
+    background-size: contain;
+}
+
+.rate-star-container {
+    text-align: center;
+    height: 47px;
+    .react-rater {
+        .react-rater-star {
+            font-size: 1.5vw;
+            &.is-active {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.center-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rdt_TableCell div {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,17 @@
+@import '../../sass/variables.scss';
+
+.icon-card {
+    text-align: center;
+    .card-img {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dot-square {
+        width: 10px;
+        height: 10px;
+        background-color: $orange;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

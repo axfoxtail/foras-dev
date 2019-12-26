@@ -1,0 +1,84 @@
+@import '../../sass/variables.scss';
+
+.individual-detail-body {
+    .technology-title {
+        padding: 5px;
+    }
+    .technology-wrapper {
+        display: inline-flex;
+        .technology-item {
+            border: solid 1px $gray;
+            border-radius: 20px;
+            padding: 3px 20px;
+            margin: 10px;
+            color: $orange;
+        }
+    }
+    .btn-send-msg, .btn-buy, .btn-give-review {
+        width: 200px;
+        border-radius: 12px;
+        background-color: $accent-orange;
+        border: none;
+    }
+    .review-profile-container {
+        display: inline-flex;
+        .reivew-profile-img-wrapper {
+            width: 70px;
+            height: 70px;
+            border: dotted 1px $gray;
+            padding: 3px;
+            border-radius: 50%;
+            overflow: hidden;
+            .review-profile-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .review-rate-star-container {
+            margin-right: 10px;
+        }   
+    }
+}
+
+.open-job-item {
+    background-color: $light-gray;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+    .logo-container {
+        width: 100px;
+        height: 100px;
+        .logo-wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: $bg-color;
+            border-radius: 10px;
+            .logo-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .button-group {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .btn-modify {
+            background-color: $orange;
+            border: none;
+            border-radius: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 5px;
+        }
+        .btn-end {
+            border-radius: 10px;
+            border: none;
+            background-color: $accent-orange;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 5px;
+        }
+    }
+}

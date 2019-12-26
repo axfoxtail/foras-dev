@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+.message-card {
+    width: 100% !important;
+    padding: 0.5rem !important;
+    border-radius: 8px !important;
+    
+    .rate-star-container {
+        text-align: center;
+        .react-rater {
+            .react-rater-star {
+                font-size: 1.5vw;
+                &.is-active {
+                    color: $orange;
+                }
+            }
+        }
+    }
+    .d-grid {
+        display: grid;
+        .card-button-group {
+
+            .icon-button {
+                background-color: transparent;
+                padding: 0;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                border-color: $black;
+                .icon-img {
+                    height: 20px;
+                }
+            }
+            .btn-start-date {
+                background-color: transparent;
+                height: 40px;
+                color: $orange;
+                border-radius: 20px;
+                border-color: $black;
+            }
+        }
+    }
+}

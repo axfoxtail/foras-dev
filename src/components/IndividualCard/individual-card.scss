@@ -1,0 +1,45 @@
+@import '../../sass/variables.scss';
+
+.individual-card {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    
+    
+    .d-grid {
+        display: grid;
+        .card-button-group {
+
+            .btn-favorite {
+                border: solid 1px;
+                padding: 0;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                border-color: $black;
+                background: url("../../assets/icons/icon-heart-o.png") no-repeat center center;
+                background-size: 25px 22px;
+                &:focus, &:active {
+                    border: solid 1px $black !important;
+                    background: url("../../assets/icons/icon-heart-o.png") no-repeat center center;
+                    background-size: 25px 22px;
+                }
+                &:hover, &.active {
+                    border: solid 1px $accent-orange !important;
+                    background: url("../../assets/icons/icon-heart.png") no-repeat center center;
+                    background-size: 25px 22px;
+                }
+                .icon-img {
+                    height: 20px;
+                }
+            }
+            .btn-start-date {
+                background-color: transparent;
+                height: 40px;
+                color: $orange;
+                border-radius: 20px;
+                border-color: $black;
+            }
+        }
+    }
+}

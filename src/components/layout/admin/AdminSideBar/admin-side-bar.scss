@@ -1,0 +1,35 @@
+@import '../../../../sass/variables.scss';
+
+.side-bar-container {
+    position: relative;
+    .side-bar-logo-container {
+        position: relative;
+        height: 80px;
+        width: 100%;
+        background-color: $orange;
+        border-bottom: solid 1px $accent-orange;
+        .logo-img {
+            position: absolute;
+            height: 60px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .side-nav {
+        padding: 10px;
+        .list-group {
+            text-align: right;
+            .list-group-item {
+                margin-top: 10px;
+                background-color: transparent;
+                border: none;
+                &.active {
+                    background-color: $orange;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

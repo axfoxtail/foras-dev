@@ -1,0 +1,27 @@
+@import '../../sass/variables.scss';
+
+.bg-iphone {
+    background: url("../../assets/images/Rectangle.png") no-repeat;
+    background-size: 100% 60%;
+    background-position: center;
+    .center-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        .border-dot {
+            max-width: 400px;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            padding: 15px;
+            -webkit-border-image: url("../../assets/images/Line-White.png") 2 round; /* Safari 3.1-5 */
+            -o-border-image: url("../../assets/images/Line-White.png") 2 round; /* Opera 11-12.1 */
+            border-image: url("../../assets/images/Line-White.png") 2 round;
+        }
+        .btn-app-link {
+            max-width: 200px;
+            margin: 5px auto;
+        }
+    }
+}

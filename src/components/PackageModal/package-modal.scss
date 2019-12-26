@@ -1,0 +1,65 @@
+@import '../../sass/variables.scss';
+
+.btn-renew {
+    background-color: $orange;
+    border-radius: 15px;
+    border: none;
+}
+
+.package-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                padding-left: 15px;
+                padding-right: 15px;
+                .right-border-indicator {
+                    border-right: solid 1px transparent;
+                    -webkit-border-image: url("../../assets/images/Line-V.png") 2 round; /* Safari 3.1-5 */
+                    -o-border-image: url("../../assets/images/Line-V.png") 2 round; /* Opera 11-12.1 */
+                    border-image: url("../../assets/images/Line-V.png") 2 round;
+                }
+                .light {
+                    background-color: rgba(242, 98, 15, 0.5);
+
+                }
+                .medium {
+                    background-color: $orange;
+                }
+                .heavy {
+                    background-color: $accent-orange;
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-go {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 25px;
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

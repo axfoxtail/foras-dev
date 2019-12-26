@@ -1,0 +1,25 @@
+@import '../../sass/variables.scss';
+
+.map-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: -165px;
+    min-height: 800px;
+    .marker-me {
+        .marker-me-img {
+            max-width: 20px;
+        }
+    }
+    .marker-foras {
+        .marker-foras-img {
+            max-width: 25px;
+        }
+    }
+    .map-footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}

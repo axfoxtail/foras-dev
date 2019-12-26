@@ -1,0 +1,16 @@
+@import '../../../sass/variables.scss';
+
+.footer {
+    background-color: $orange;
+    color: $white;
+    .container {
+        position: relative;
+        height: 120px;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
