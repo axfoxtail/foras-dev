@@ -172,18 +172,9 @@ class LoginModal extends React.Component {
                         </Form>
                         <div className="social-icon-group pt-3">
                             
-                            {/* <a href="/" className="social-btn">
-                                <img src={img_linkedin} className="social-icon" alt="Linkedin" />
-                            </a> */}
                             <ForasLinkedinLogin />
-                            <ForasGoogleLogin handleGoogleLoginResponse={this.handleGoogleLoginResponse} />
-                            {/* <a href="/" className="social-btn mx-5">
-                                <img src={img_google} className="social-icon" alt="Google" />
-                            </a> */}
-                            {/* <a href="/" className="social-btn">
-                                <img src={img_facebook} className="social-icon" alt="Facebook" />
-                            </a> */}
-                            <ForasFacebookLogin handleFacebookLoginResponse={this.handleFacebookLoginResponse} />
+                            {/* <ForasGoogleLogin handleGoogleLoginResponse={this.handleGoogleLoginResponse} /> */}
+                            {/* <ForasFacebookLogin handleFacebookLoginResponse={this.handleFacebookLoginResponse} /> */}
                         </div>
                     </Modal.Body>
                     <Modal.Footer>

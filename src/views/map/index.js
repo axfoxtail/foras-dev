@@ -1,5 +1,4 @@
 import React from 'react';
-import jobApi from '../../services/job.service';
 import './map.scss';
 import ForasHeroImage from '../../components/ForasHeroImage';
 import ForasOpportunityMap from '../../components/ForasOpportunityMap';
@@ -36,15 +35,7 @@ class Map extends React.Component {
     }
 
     getJobs = () => {
-        jobApi.getJobs(global.sortObj)
-            .then((response) => {
-                if(response.status === 200) {
-                    this.setState({jobs: response.data});
-                }
-            })
-            .catch((error) => {
-                console.log('err: ', error);
-            })
+        
     }
 
     getIndividuals = () => {

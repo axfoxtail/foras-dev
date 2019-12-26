@@ -4,7 +4,6 @@ import './individual-detail.scss';
 import JobDetailHeader from '../../../components/JobDetailHeader';
 import JobDetailBody from '../../../components/JobDetailBody';
 import SimilarJobs from '../../../components/SimilarJobs';
-import jobApi from '../../../services/job.service';
 
 class JobDetail extends React.Component {
     constructor(props) {
@@ -19,20 +18,7 @@ class JobDetail extends React.Component {
 
     componentDidMount() {
         const param = window.location.href.split('jobs/')[1];
-        jobApi.jobDetail(param)
-            .then((response) => {
-                if(response.status === 200) {
-                    this.setState({
-                        job: response.data.job, 
-                        jobOwner: response.data.job.users, 
-                        similars: response.data.similars,
-                        reviews: response.data.reviews,
-                    });
-                }
-            })
-            .catch((error) => {
-                console.log('err: ', error);
-            })
+        
     }
 
     render() {

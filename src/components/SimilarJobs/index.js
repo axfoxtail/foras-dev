@@ -4,7 +4,6 @@ import { Button } from 'react-bootstrap';
 import './similar-jobs.scss';
 import Line from '../Line';
 import JobCard from '../JobCard';
-import jobApi from '../../services/job.service';
 
 const icon_location = require('../../assets/icons/icon-location.png');
 const icon_post = require('../../assets/icons/icon-post.png');
