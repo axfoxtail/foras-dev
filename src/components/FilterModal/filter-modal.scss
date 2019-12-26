@@ -1,0 +1,137 @@
+@import '../../sass/variables.scss';
+
+.btn-filter {
+    position: absolute;
+    background-color: transparent;
+    color: $white !important;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: 20%;
+    left: 15%;
+    z-index: 10;
+    &:hover, &:active, &:focus {
+        background-color: transparent !important;
+        border-color: $white !important;
+        box-shadow: none !important;
+    }
+    .filter-button-img {
+        width: 70px;
+    }
+}
+
+.filter-modal {
+    .modal-dialog {
+        max-width: 600px;
+        margin-top: 170px;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                .filter-nav {
+                    background-color: $white;
+                    border-radius: 10px;
+                    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35); 
+                    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+                    .btn-filter-nav {
+                        background-color: transparent;
+                        padding: 15px 0;
+                        width: 100%;
+                        border: 0;
+                        box-shadow: none;
+                        &.active, &:focus, &:hover, &:active {
+                            background-color: #e8e8e8;
+                            box-shadow: none;
+                        }
+                        .filter-nav-img {
+                            height: 30px;
+                        }
+                    }
+                }
+                .filter-period {
+                    min-height: 70px;
+                    padding-top: 20px;
+                    display: none;
+                    &.open {
+                        display: block;
+                    }
+                }
+                .filter-salary {
+                    min-height: 70px;
+                    padding-top: 20px;
+                    display: none;
+                    &.open {
+                        display: block;
+                    }
+                }
+                .filter-workhours {
+                    min-height: 70px;
+                    padding-top: 20px;
+                    display: none;
+                    &.open {
+                        display: block;
+                    }
+                }
+                .filter-workdays {
+                    min-height: 70px;
+                    padding-top: 20px;
+                    display: none;
+                    &.open {
+                        display: block;
+                    }
+                    .btn-toggle-workdays {
+                        background-color: $white;
+                        border: solid 1px $input-border;
+                        border-radius: 20px;
+                        color: $input-color;
+                        width: 100%;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        &.active {
+                            background-color: $orange !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+                .form-control {
+                    border-radius: 20px;
+                    height: 40px;
+                }
+            }
+            .modal-footer {
+                position: relative;
+                border: none;
+                .btn-go {
+                    background-color: $accent-orange;
+                    border: none;
+                    border-radius: 20px;
+                    &:hover, &:focus, &:active {
+                        background-color: $accent-orange;
+                        border: none;
+                    }
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

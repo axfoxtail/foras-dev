@@ -1,0 +1,69 @@
+@import '../../sass/variables.scss';
+
+.btn-login {
+    border: solid 1px $white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: $white !important;
+    padding: 0.3rem 2rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    &:hover, &:active, &:focus {
+        background-color: transparent !important;
+        border-color: $white !important;
+        box-shadow: none !important;
+    }
+}
+
+.role-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        max-width: 450px !important;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                .btn-role {
+                    margin: 10px;
+                    border-radius: 20px;
+                    padding: 5px 30px;
+                    background-color: transparent;
+                    border: solid 1px $orange;
+                    color: $input-color;
+                    &.active, &:hover, &:focus, &:active {
+                        background-color: $orange !important;
+                        color: $white;
+                    }
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-go {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 25px;
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

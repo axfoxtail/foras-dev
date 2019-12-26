@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+
+.hero-img-container {
+    position: relative;
+    z-index: 10;
+    .hero-image-footer {
+        position: absolute;
+        height: 120px;
+        margin-top: -120px;
+    }
+
+    .search-form {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 400px;
+        width: 100%;
+        .form-control {
+            height: 50px;
+            border-radius: 25px;
+            padding-right: 30px;
+            padding-left: 60px;
+        }
+        .btn-orange {
+            position: absolute;
+            background-color: $orange;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            left: 0px;
+            z-index: 5;
+        }
+    }
+}

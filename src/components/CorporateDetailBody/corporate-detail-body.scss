@@ -1,0 +1,41 @@
+@import '../../sass/variables.scss';
+
+.corporate-detail-body {
+    .technology-title {
+        padding: 5px;
+    }
+    .technology-wrapper {
+        display: inline-flex;
+        .technology-item {
+            border: solid 1px $gray;
+            border-radius: 20px;
+            padding: 3px 20px;
+            margin: 10px;
+            color: $orange;
+        }
+    }
+    .btn-send-msg, .btn-buy, .btn-give-review {
+        width: 200px;
+        border-radius: 12px;
+        background-color: $accent-orange;
+        border: none;
+    }
+    .review-profile-container {
+        display: inline-flex;
+        .reivew-profile-img-wrapper {
+            width: 70px;
+            height: 70px;
+            border: dotted 1px $gray;
+            padding: 3px;
+            border-radius: 50%;
+            overflow: hidden;
+            .review-profile-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .review-rate-star-container {
+            margin-right: 10px;
+        }   
+    }
+}

@@ -1,0 +1,127 @@
+@import '../../sass/variables.scss';
+
+.btn-register-individual {
+    background-color: $accent-orange;
+    border-radius: 20px;
+    color: $white !important;
+    padding: 0.3rem 2rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    border-color: $accent-orange !important;
+    &:hover, &:active, &:focus {
+        background-color: $accent-orange !important;
+        border-color: $accent-orange !important;
+        box-shadow: none !important;
+    }
+}
+
+.register-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        max-width: 600px;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .register-form {
+                    margin-left: auto;
+                    margin-right: auto;
+                    .right-border-indicator {
+                        border-right: solid 1px transparent;
+                        -webkit-border-image: url("../../assets/images/Line-V.png") 2 round; /* Safari 3.1-5 */
+                        -o-border-image: url("../../assets/images/Line-V.png") 2 round; /* Opera 11-12.1 */
+                        border-image: url("../../assets/images/Line-V.png") 2 round;
+                    }
+                    .input-group {
+                        margin-bottom: 15px;
+                    }
+                    .m-b-15 {
+                        margin-bottom: 15px;
+                    }
+                    .input-icon {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        margin-right: 20px;
+                        right: 0;
+                        top: 10px;
+                    }
+                    .err-msg {
+                        color: $danger !important;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                    .form-control {
+                        padding-left: 20px;
+                        padding-right: 50px;
+                        border-radius: 30px;
+                        &.select, &.none-icon {
+                            padding-right: 15px;
+                            padding-left: 15px;
+                        }
+                        .input-password {
+                            padding-left: 60px;
+                        }
+                    }
+                    .btn-toggle-show {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        left: 15px;
+                        color: $gray;
+                    }
+                    .btn-gender {
+                        background-color: $white;
+                        border: solid 1px $input-border;
+                        border-radius: 20px;
+                        color: $input-color;
+                        width: 100%;
+                        &.active {
+                            background-color: $orange;
+                            color: $white;
+                        }
+                        .gender-icon {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .social-icon-group {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-go {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 25px;
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

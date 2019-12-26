@@ -1,0 +1,22 @@
+@import '../../../../sass/variables.scss';
+
+.top-nav-bar-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: inline-flex;
+    padding: 20px;
+    .current-route {
+        font-size: 20px;
+        padding-top: 5px;
+        text-transform: capitalize;
+    }
+    .btn-logout {
+        position: relative;
+        margin-right: auto;
+        border-radius: 30px;
+        background-color: $orange;
+        border: solid 1px $accent-orange;
+    }
+}

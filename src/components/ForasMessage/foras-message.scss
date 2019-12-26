@@ -1,0 +1,54 @@
+@import '../../sass/variables.scss';
+
+.foras-message {
+    margin-top: auto;
+    margin-bottom: auto;
+    .dropdown-menu {
+        background-color: $bg-color;
+        padding: 15px;
+        width: 450px;
+        left: -30px;
+        &::before {
+            width: 0 !important; 
+            height: 0 !important; 
+            border-left: 5px solid transparent;  /* left arrow slant */
+            border-right: 5px solid transparent; /* right arrow slant */
+            border-bottom: 5px solid #2f2f2f; /* bottom, add background color here */
+            font-size: 0;
+            line-height: 0;
+        }
+        .dropdown-triangle-img {
+            position: absolute;
+            width: 30px;
+            top: -30px;
+            left: 10%;
+        }
+        .btn-message-setting {
+            width: 100%;
+            height: 40px;
+            background-color: $black;
+            border-radius: 30px;
+            text-align: center;
+            color: $white;
+            padding: 8px;
+            .icon-img {
+                width: 20px;
+            }
+        }
+        .message-item {
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .dropdown-divider {
+            border-top: 1px solid transparent;
+            padding: 0px;
+            -webkit-border-image: url("../../assets/images/Line.png") 1 round; /* Safari 3.1-5 */
+            -o-border-image: url("../../assets/images/Line.png") 1 round; /* Opera 11-12.1 */
+            border-image: url("../../assets/images/Line.png") 1 round;
+        }
+        .dropdown-icon-img {
+            width: 15px;
+        }
+    }
+}

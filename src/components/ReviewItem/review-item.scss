@@ -1,0 +1,23 @@
+@import '../../sass/variables.scss';
+
+.review-item {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    .review-item-header {
+        display: inline;
+        .review-item-giver {
+            float: right;
+            line-height: 47px;
+        }
+        .review-item-star-wrapper {
+            float: left;
+        }
+    }
+}
+.btn-reivew-load-more {
+    position: relative;
+    width: 100%;
+    margin-bottom: -16px;
+    background-color: $dark;
+}

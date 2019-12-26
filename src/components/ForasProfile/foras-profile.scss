@@ -1,0 +1,144 @@
+@import '../../sass/variables.scss';
+
+.foras-profile {
+    .nav-profile-info {
+        position: relative;
+        border: solid 1px $white;
+        border-radius: 20px;
+        height: 30px;
+        padding: 3px 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        .dropdown-icon-img {
+            width: 15px;
+        }
+    }
+    .nav-profile-img-container {
+        border-radius: 50%;
+        border: dotted 1px $white;
+        width: 70px;
+        padding: 5px;
+        overflow: hidden;
+        .nav-profile-img-wrapper {
+            width: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            .nav-profile-img {
+                width: 100%;
+            }
+        }
+    }
+    .dropdown-menu {
+        background-color: $bg-color;
+        padding: 30px 50px;
+        width: 320px;
+        left: -15px;
+        top: 90px !important;
+        &::before {
+            width: 0 !important; 
+            height: 0 !important; 
+            border-left: 5px solid transparent;  /* left arrow slant */
+            border-right: 5px solid transparent; /* right arrow slant */
+            border-bottom: 5px solid #2f2f2f; /* bottom, add background color here */
+            font-size: 0;
+            line-height: 0;
+        }
+        .profile-detail {
+            text-align: center;
+            .profile-img-container {
+                position: relative;
+                width: 120px;
+                height: 120px;
+                border: dotted 1px $black;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                padding: 10px;
+                .profile-img-wrapper {
+                    width: 100%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    .profile-img {
+                        width: 100%;
+                    }
+                }
+            }
+            .profile-name {
+                text-align: center;
+            }
+            .profile-rate-star {
+                text-align: center;
+            }
+        }
+        .btn-profile-location {
+            width: 100%;
+            height: 40px;
+            background-color: $accent-orange;
+            border-radius: 30px;
+            text-align: center;
+            color: $white;
+            padding: 8px;
+            .icon-img {
+                width: 20px;
+            }
+        }
+        .btn-profile-edit {
+            width: 100%;
+            height: 40px;
+            background-color: $accent-orange;
+            border-radius: 30px;
+            text-align: center;
+            color: $white;
+            padding: 8px;
+            .icon-img {
+                width: 20px;
+            }
+        }
+        .btn-logout {
+            width: 100%;
+            height: 40px;
+            background-color: $black;
+            border-radius: 30px;
+            text-align: center;
+            color: $white;
+            padding: 8px;
+            .icon-img {
+                width: 20px;
+            }
+        }
+        .profile-item {
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .dropdown-divider {
+            border-top: 1px solid transparent;
+            padding: 0px;
+            -webkit-border-image: url("../../assets/images/Line.png") 1 round; /* Safari 3.1-5 */
+            -o-border-image: url("../../assets/images/Line.png") 1 round; /* Opera 11-12.1 */
+            border-image: url("../../assets/images/Line.png") 1 round;
+        }
+        .dropdown-icon-img {
+            width: 15px;
+        }
+    }
+}
+
+.profile-dropdown {
+    &::before {
+        width: 0 !important; 
+        height: 0 !important; 
+        border-left: 5px solid transparent;  /* left arrow slant */
+        border-right: 5px solid transparent; /* right arrow slant */
+        border-bottom: 5px solid #2f2f2f; /* bottom, add background color here */
+        font-size: 0;
+        line-height: 0;
+    }
+    .dropdown-triangle-img {
+        position: absolute;
+        width: 30px;
+        top: -30px;
+        left: 10%;
+    }
+}

@@ -1,0 +1,90 @@
+@import '../../sass/variables.scss';
+
+.btn-send-msg {
+    width: 200px;
+    border-radius: 12px;
+    background-color: $accent-orange;
+    border: none;
+}
+
+.message-modal {
+    .modal-dialog {
+        margin-top: 170px;
+        max-width: 450px !important;
+        .modal-content {
+            border-radius: 1.5rem;
+            background-image: url("../../assets/images/bg-modal-footer.png");
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            .modal-header {
+                text-align: center;
+                border: none;
+                .modal-title {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: solid 3px $accent-orange;
+                    padding-bottom: 10px;
+                }
+            }
+            .modal-body {
+                .message-form {
+                    margin-left: auto;
+                    margin-right: auto;
+                    .input-icon {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        margin-right: 20px;
+                        right: 0;
+                        top: 10px;
+                    }
+                    .err-msg {
+                        color: $danger !important;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                    input.form-control {
+                        padding-left: 20px;
+                        padding-right: 50px;
+                        border-radius: 30px;
+                        .input-password {
+                            padding-left: 60px;
+                        }
+                    }
+                    .btn-toggle-show {
+                        position: absolute;
+                        align-self: center;
+                        z-index: 10;
+                        left: 15px;
+                        color: $gray;
+                    }
+                    .err-msg {
+                        color: $gray;
+                    }
+                }
+                .social-icon-group {
+                    max-width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            .modal-footer {
+                height: 200px;
+                position: relative;
+                border: none;
+                .btn-go {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 25px;
+                    .img-btn-go {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
