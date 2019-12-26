@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, InputGroup, FormControl, Form } from 'react-bootstrap';
 import './job-post-form.scss';
-import jobApi from '../../services/job.service';
 import session from '../../services/session.service';
 import helper from '../../services/helper.service';
 import Line from '../Line';
@@ -82,19 +81,7 @@ class JobPostForm extends React.Component {
     }
 
     handleSubmit = () => {
-        jobApi.postJob(this.state)
-            .then(response => {
-                if(response.status === 200) {
-                    helper.showToast('Success', 'Successfully posted a job.', 1);
-                    window.location.href='/profile';
-                } else {
-                    helper.showToast('Error', 'Failed to post a job.', 3);
-                }
-            })
-            .catch((error) => {
-                console.log('>>err:', error);
-                helper.showToast('Error', 'Failed to post a job.', 3);
-            });
+       
     }
 
     render() {

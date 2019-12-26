@@ -1,7 +1,6 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import './contact-us-form.scss';
-import contactApi from '../../services/contact.service';
 import session from '../../services/session.service';
 import helper from '../../services/helper.service';
 
@@ -34,17 +33,7 @@ class ContactUsForm extends React.Component {
     }
 
     handleSubmit = () => {
-        contactApi.submitTicket(this.state)
-            .then((response) => {
-                if(response.status === 200) {
-                    helper.showToast('Success', 'Successfully Submitted.', 1);
-                    window.location.reload();
-                }
-            })
-            .catch((error) => {
-                console.log('err: ', error);
-                helper.showToast('Error', 'Invalid Params.', 3);
-            });
+        
     }
 
     render() {

@@ -3,7 +3,6 @@ import React from 'react';
 import './jobs.scss';
 import ForasHeroImage from '../../../components/ForasHeroImage';
 import ForasFilterJobs from '../../../components/ForasFilterJobs';
-import jobApi from '../../../services/job.service';
 
 const hero_img = require('../../../assets/images/map-hero.png');
 const img_map_footer = require('../../../assets/images/map-footer.png');
@@ -22,25 +21,9 @@ class ForasJobs extends React.Component {
             orderDirection: 'ASC',
             search: null
         };
-        jobApi.getJobs()
-            .then((response) => {
-                this.setState({jobs: response.data});
-            })
-            .catch((error) => {
-                console.log('err: ', error);
-            })
     }
 
     getJobs = () => {
-        jobApi.getJobs(global.sortObj)
-            .then((response) => {
-                if(response.status === 200) {
-                    this.setState({jobs: response.data});
-                }
-            })
-            .catch((error) => {
-                console.log('err: ', error);
-            })
     }
 
     handleSearch = (search) => {
